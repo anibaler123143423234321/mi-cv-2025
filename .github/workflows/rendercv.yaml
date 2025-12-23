@@ -37,7 +37,7 @@ jobs:
           # Create a custom index.html that embeds the PDF
           echo '<!DOCTYPE html><html><head><title>CV - Dagner Chuman</title><style>body,html{margin:0;padding:0;height:100%;overflow:hidden}embed{width:100%;height:100%}</style></head><body><embed src="Dagner_CV.pdf" type="application/pdf"></body></html>' > rendercv_output/index.html
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: rendercv_output
 
