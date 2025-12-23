@@ -28,14 +28,22 @@ jobs:
             if ! command -v rendercv &> /dev/null; then
                 pip install "rendercv[full]"
             fi
-      - name: Render CV
-        run: |
-          # Render the CV
+          # Determine output directory
           mkdir -p rendercv_output
-          rendercv render Dagner_Anibal_Chuma_Nlluen_CV.yaml --pdf-path rendercv_output/Dagner_CV.pdf --html-path rendercv_output/cv_content.html --png-path rendercv_output/Dagner_CV.png
           
-          # Create a custom index.html that embeds the PDF
-          echo '<!DOCTYPE html><html><head><title>CV - Dagner Chuman</title><style>body,html{margin:0;padding:0;height:100%;overflow:hidden}embed{width:100%;height:100%}</style></head><body><embed src="Dagner_CV.pdf" type="application/pdf"></body></html>' > rendercv_output/index.html
+          # Render the CV
+          # Note: We rely on standard output first, then move files if needed to ensure stability
+          rendercv render Dagner_Anibal_Chuma_Nlluen_CV.yaml
+          
+          # Move generated files to expected locations for the site
+          # The standard output creates a folder rendercv_output with the file inside
+          # We need to flatten or move them to match our site structure
+          
+          # Find the generated PDF (it will be in rendercv_output/*.pdf)
+          find rendercv_output -name "*.pdf" -exec mv {} rendercv_output/Dagner_CV.pdf \;
+          
+          # Copy our custom index
+          cp index_template.html rendercv_output/index.html
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
