@@ -1,0 +1,52 @@
+name: RenderCV
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  render-cv:
+    name: Render CV
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install RenderCV
+        run: |
+          pip install "rendercv[full]"
+          cd src
+          pip install -e .
+        continue-on-error: true
+      - name: Install RenderCV (PyPI)
+        run: |
+            if ! command -v rendercv &> /dev/null; then
+                pip install "rendercv[full]"
+            fi
+      - name: Render CV
+        run: |
+          # Render the CV
+          rendercv render Dagner_Anibal_Chuma_Nlluen_CV.yaml --pdf-path Dagner_CV.pdf --html-path index.html --png-path Dagner_CV.png
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: rendercv_output
+
+  deploy:
+    needs: render-cv
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

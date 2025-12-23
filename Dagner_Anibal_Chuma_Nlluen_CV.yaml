@@ -1,0 +1,141 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.5/schema.json
+cv:
+  name: Dagner Anibal Chuman Lluen
+  headline: Ingeniero de Sistemas y Desarrollo de Software
+  location: Ferreñafe, Perú
+  email: dchumanlluen@gmail.com
+  phone: "+51 958 875 176"
+  social_networks:
+    - network: LinkedIn
+      username: dagner-anibal-chuman-lluen-513a4a286
+  sections:
+    perfil:
+      - Ingeniero de sistemas con experiencia en desarrollo de software, tecnologías web, gestión de la información, y servidores de red. Persona con más de 3 años de experiencia, responsable, perseverante y positivista, con iniciativa. Habilidad para trabajar en equipo, bajo presión y en diversos contextos laborales.
+    formación_académica:
+      - institution: Universidad Señor de Sipan
+        area: Ingeniería de Sistemas
+        degree: Título Profesional
+        date: 2024-01
+        location: Ferreñafe, Perú
+        highlights:
+          - Colegiado – CIP (2024)
+      - institution: Universidad Señor de Sipan
+        area: Ingeniería de Sistemas
+        degree: Bachiller
+        date: 2023-01
+        location: Ferreñafe, Perú
+    experiencia_laboral:
+      - company: Midas Solutions Center
+        position: Desarrollador Full Stack
+        start_date: 2025-01
+        end_date: present
+        location: Ferreñafe, Perú (Remoto)
+        highlights:
+          - "Front-End y UX/UI: Diseñé y desarrollé 8 landing pages responsivas utilizando Astro Framework, React, Vite, Angular y Tailwind CSS, optimizadas para Core Web Vitals y SEO (>95 en Lighthouse)."
+          - "Arquitectura Backend & Cloud: Construí un CRM de ventas y leads enterprise con Java Spring Boot y NestJS, aplicando Redis para caching distribuido, RabbitMQ para mensajería asíncrona y Nginx como reverse proxy."
+          - "Integré Google Drive API para gestión documental y gestioné certificados SSL/TLS automáticos con Let’s Encrypt y AWS Certificate Manager."
+          - "Inteligencia Artificial: Integré transcripción automática de audio (Whisper) y comparación semántica en tiempo real vía WebSockets en Angular."
+          - "Desarrollé pipelines de IA generativa para análisis y automatización de procesos con n8n, OpenAI (GPT-4/4.5, Gemini, Claude) y Augment AI."
+          - "DevOps: Gestioné entornos cloud con RunPod (GPUs dedicadas) y despliegues en Nginx con balanceo de carga."
+      - company: Docente Módulo de Inteligencia Artificial
+        position: Docente
+        start_date: 2025-07
+        end_date: 2025-12
+        location: Ferreñafe, Perú
+        highlights:
+          - "Formación en IA aplicada: Imparto clases de Inteligencia Artificial y Tecnologías Emergentes a estudiantes de secundaria."
+          - "Herramientas: Google AI Studio, Gemini, ChatGPT, Veo 3, Hailuo AI. Enseñanza de fundamentos de Python para proyectos de IA con Hugging Face Diffusers y Google Colab."
+          - "Creación de prototipos interactivos y alfabetización en IA responsable y ética digital."
+      - company: Geniom Consultores S.A.C.
+        position: Desarrollador Full Stack
+        start_date: 2025-03
+        end_date: 2025-04
+        location: Chiclayo, Perú
+        highlights:
+          - Gestión de Colas con RabbitMQ routing y Exchange en Java Spring Boot.
+      - company: Instituto Superior Tecnológico Enrique López Albújar
+        position: Docente en Computación
+        start_date: 2024-08
+        end_date: 2024-12
+        location: Ferreñafe, Perú
+        highlights:
+          - Desarrollo de aplicaciones web backend utilizando Java Spring Boot y Angular 14.
+          - Reparación y mantenimiento de computadoras. Administración de servidores de red mediante Active Directory.
+          - Desarrollo de software para seguimiento de egresados y aplicación móvil para visualización de diapositivas.
+      - company: Minimarket Job Ferreñafe
+        position: Desarrollador en Microservicios
+        start_date: 2022-09
+        end_date: 2023-12
+        location: Ferreñafe, Perú
+        highlights:
+          - "Stack: MySQL, Java, Microservicios (Spring Boot, Spring Cloud, Eureka, API Gateway), Angular, RabbitMQ, WebSockets."
+          - "Entornos de Producción: Heroku, Firebase, Play Console, Google Cloud, Hostinger."
+          - "Proyecto: Aplicativo en Google Play Console (com.dagnerchuman.miaplicativonegociomicroservice)."
+      - company: Grupo Ases Chiclayo
+        position: Prácticas Pre Profesionales
+        start_date: 2023-04
+        end_date: 2023-08
+        location: Ferreñafe, Perú
+        highlights:
+          - Desarrollador en PHP, Laravel, MySQL y UML.
+          - Asistente de soporte TI.
+    actividades_externas:
+      - name: Desarrollo de Backend y Aplicativo tipo InDriver
+        start_date: 2024-01
+        end_date: 2024-04
+        summary: Desarrollo independiente de solución backend y móvil similar a InDriver.
+        highlights:
+          - "Tecnologías: Java, Spring Boot, Spring Cloud, Eureka, API Gateway, Dart (Flutter), WebSockets, MySQL."
+          - "Funcionalidades: Autenticación JWT, microservicios, integración con Google Maps, comunicación Socket.IO en tiempo real."
+          - "Despliegue y Hosting: Heroku y Firebase."
+      - name: Desarrollo de Software para Sistema de Cotizaciones de Eventos
+        start_date: 2024-10
+        end_date: 2024-12
+        summary: Sistema integral de cotizaciones para eventos.
+        highlights:
+          - "Backend en Java (Spring Boot), Frontend con AdminLTE 3.1.1."
+          - "Gestión de clientes, servicios, cotizaciones dinámicas y reportes automatizados."
+          - "Ayacucho, Perú (Remoto)"
+      - name: Desarrollo de Software para Veterinaria
+        start_date: 2024-08
+        end_date: 2024-10
+        summary: Sistema completo de gestión para veterinaria (compras, ventas, historias clínicas).
+        highlights:
+          - "Backend Java Spring Boot (Spring Security), Frontend Angular 14."
+      - name: Desarrollo de una página para Ecommerce
+        start_date: 2023-10
+        end_date: 2024-01
+        summary: Sitio web de comercio electrónico de ropa (www.novedadesmonyclau.com).
+        highlights:
+          - "WordPress, Astra Pro, Elementor Pro. Hosting en Hostinger."
+          - "Implementación de pasarela de pagos y optimización SEO."
+    competencias:
+      - label: Herramientas
+        details: Docker, Kubernetes, Spring Boot, Angular, ASP.NET Core, PHP, MySQL, JavaScript, Flutter, Google Cloud Platform, React Native
+      - label: Idiomas
+        details: Inglés Intermedio
+      - label: Habilidades Blandas
+        details: Trabajo en equipo, liderazgo, adaptabilidad, resolución de conflictos
+    formación_complementaria:
+      - bullet: Microservicios Reactive Web, Kafka, Eureka, Spring Cloud, Gateway (2024)
+      - bullet: Microservicios con Node.js y GraphQL (2024)
+      - bullet: HelpDesk PHP, MySQL, JS (MVC) y ChatGPT (2024)
+      - bullet: Mesa de Partes Virtual con PHP, MySQL y JS (2024)
+      - bullet: ASP.NET Core y Angular en Kubernetes - GCP (2023)
+      - bullet: Chatbot using Machine Learning Project Complete (2024)
+      - bullet: Docker y Kubernetes (2024)
+      - bullet: Crea un Sistema de Compra y Venta con PHP, JS y SQL Server (2024)
+      - bullet: Facturación electrónica con PHP y Laravel 11 (2025)
+      - bullet: Inteligencia Artificial (IA) con ChatGPT (2025)
+      - bullet: Curso Práctico de Creación de Imágenes con IA Generativa (2025)
+design:
+  theme: classic
+  page:
+    size: a4
+    top_margin: 1.5cm
+    bottom_margin: 1.5cm
+    left_margin: 1.5cm
+    right_margin: 1.5cm
+locale:
+  language: spanish
+  present: Actualidad

@@ -1,0 +1,33 @@
+A new version of RenderCV is available! You are using v2.3, and the latest 
+version is v2.5.
+                                                                         
+Welcome to RenderCV! Some useful links:                                  
++-----------------------------------------------------------------------+
+| Title             |                                              Link |
+|-------------------+---------------------------------------------------|
+| RenderCV App      |                              https://rendercv.com |
+| Documentation     |                         https://docs.rendercv.com |
+| Source code       |             https://github.com/rendercv/rendercv/ |
+| Bug reports       |      https://github.com/rendercv/rendercv/issues/ |
+| Feature requests  |      https://github.com/rendercv/rendercv/issues/ |
+| Discussions       | https://github.com/rendercv/rendercv/discussions/ |
+| RenderCV Pipeline |    https://github.com/rendercv/rendercv-pipeline/ |
++-----------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+| 15 ms Validating the input file has started.                                |
++-----------------------------------------------------------------------------+
+15 ms                                          (0 out of 6 steps finished)                                                                               
+There are some errors in the data model!                                       
+                                                                               
++-----------------------------------------------------------------------------+
+| Location                  | Input Value | Error Message                     |
+|---------------------------+-------------+-----------------------------------|
+| design.page.show_footer   | True        | This field is unknown for this    |
+|                           |             | object! Please remove it.         |
+|---------------------------+-------------+-----------------------------------|
+| design.page.show_top_note | False       | This field is unknown for this    |
+|                           |             | object! Please remove it.         |
+|---------------------------+-------------+-----------------------------------|
+| design.sections           |             | This field is unknown for this    |
+|                           |             | object! Please remove it.         |
++-----------------------------------------------------------------------------+
