@@ -45,7 +45,7 @@ jobs:
           # Copy our custom index
           cp index_template.html rendercv_output/index.html
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: rendercv_output
 
