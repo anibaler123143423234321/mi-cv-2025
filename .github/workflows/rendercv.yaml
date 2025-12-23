@@ -31,7 +31,8 @@ jobs:
       - name: Render CV
         run: |
           # Render the CV
-          rendercv render Dagner_Anibal_Chuma_Nlluen_CV.yaml --pdf-path Dagner_CV.pdf --html-path index.html --png-path Dagner_CV.png
+          mkdir -p rendercv_output
+          rendercv render Dagner_Anibal_Chuma_Nlluen_CV.yaml --pdf-path rendercv_output/Dagner_CV.pdf --html-path rendercv_output/index.html --png-path rendercv_output/Dagner_CV.png
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
